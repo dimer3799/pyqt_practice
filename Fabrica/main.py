@@ -1,6 +1,6 @@
 import sys  # sys нужен для передачи argv в QApplication
 from random import randint
-from PyQt5 import QtWidgets
+from PyQt5 import QtWidgets, QtGui
 import design  # Это наш преобразованный файл дизайна
 
 
@@ -52,6 +52,9 @@ class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
             self.label_9.setText('Количество: ' + str(product))
             self.label.setText('Деньги: ' + str(money))
             self.progressBar.setValue(sklad)
+        else:
+            QtWidgets.QMessageBox.information(
+                None, 'Сообщене', 'Не хватает продукции')
 
 
 def main():
