@@ -12,7 +12,7 @@
   </property>
   <property name="font">
    <font>
-    <underline>true</underline>
+    <underline>false</underline>
    </font>
   </property>
   <property name="windowTitle">
@@ -152,10 +152,15 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>100</y>
+      <y>110</y>
       <width>841</width>
-      <height>441</height>
+      <height>431</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <underline>false</underline>
+     </font>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_6">
@@ -174,7 +179,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Шрифт</string>
+     <string>Цвет</string>
     </property>
    </widget>
    <widget class="QSpinBox" name="spinBox">
@@ -192,15 +197,8 @@
       <underline>false</underline>
      </font>
     </property>
-   </widget>
-   <widget class="QComboBox" name="comboBox">
-    <property name="geometry">
-     <rect>
-      <x>360</x>
-      <y>10</y>
-      <width>131</width>
-      <height>41</height>
-     </rect>
+    <property name="value">
+     <number>8</number>
     </property>
    </widget>
    <widget class="QFontComboBox" name="fontComboBox">
@@ -219,6 +217,44 @@
      </font>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>10</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>Шрифт</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_8">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>Выбор шрифта</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -235,6 +271,7 @@
     </property>
     <addaction name="action"/>
     <addaction name="action_2"/>
+    <addaction name="action_5"/>
     <addaction name="action_3"/>
    </widget>
    <widget class="QMenu" name="menu_2">
@@ -265,6 +302,11 @@
   <action name="action_4">
    <property name="text">
     <string>О программе</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>Создать шаблон Веб страницы</string>
    </property>
   </action>
  </widget>
